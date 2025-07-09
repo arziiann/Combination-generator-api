@@ -344,24 +344,54 @@ After cloning the repository, follow these steps to set up the project locally:
 
 ```bash
 git clone https://github.com/arziiann/Combination-generator-api.git
-cd Combination-generator-api
+cd Combination-generator-api/server
 ````
 
 ---
 
-
 ### 2. 🐘 Create PostgreSQL Database
 
-Create a PostgreSQL database manually (must be named `combinations_db`) using your preferred method or CLI tool:
+Create a PostgreSQL database manually (must be named `combinations_db`) using your preferred method or CLI tool.
+
+To create the required database, follow these steps:
+
+1. **Open your terminal**
+
+2. Enter the PostgreSQL shell:
 
 ```bash
-createdb combinations_db
+psql -U postgres
+````
+
+> Replace `postgres` with your actual PostgreSQL username if it's different. You may be prompted for a password.
+
+3. Inside the `psql` shell, create the database:
+
+```sql
+CREATE DATABASE combinations_db;
+```
+
+If everything is successful, you’ll see:
+
+```
+CREATE DATABASE
+```
+
+4. Exit the PostgreSQL shell:
+
+```sql
+\q
+```
+
+
+
 
 ### 3. ⚙️ Configure Environment Variables
 
 Create a `.env` file based on the provided `.env.example`:
 
 ```bash
+cd ..
 cp .env.example .env
 ```
 
@@ -399,8 +429,6 @@ npm install --save-dev npm-run-all
 ```
 
 ---
-
-Իհարկե, ահա միայն այդ հատվածը՝ ճիշտ `README.md` ֆորմատով, Markdown ձևաչափով․
 
 
 ### 4. 🚀 Start the Server
