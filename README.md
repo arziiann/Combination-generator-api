@@ -333,8 +333,6 @@ Stores the final response sent back to the user
 ![Database Schema](https://github.com/arziiann/test/blob/master/2025-07-09_09-52-54.png)
 ![Database Schema](https://github.com/arziiann/test/blob/master/2025-07-09_09-54-41.png)
 
-Իհարկե, ահա քո ուղարկած կարգավորումների ու dependency-ների մասը՝ լիովին ձևաչափված `README.md`-ի Markdown սինտաքսով, որպեսզի ուղղակի կարողանաս տեղադրել․
-
 
 ## 🛠️ Setup Instructions
 
@@ -345,8 +343,8 @@ After cloning the repository, follow these steps to set up the project locally:
 ### 1. 📥 Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/combination-generator.git
-cd combination-generator/server
+git clone https://github.com/arziiann/Combination-generator-api.git
+cd Combination-generator/server
 ````
 
 ---
