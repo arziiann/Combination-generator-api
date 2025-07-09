@@ -1,0 +1,17 @@
+CREATE TABLE items (
+  id SERIAL PRIMARY KEY,
+  content TEXT NOT NULL
+);
+
+CREATE TABLE combinations (
+  id SERIAL PRIMARY KEY,
+  combination TEXT[][] NOT NULL,
+ item_id INTEGER NOT NULL REFERENCES items(id) ON DELETE CASCADE
+ );
+
+
+CREATE TABLE  responses (
+  id SERIAL PRIMARY KEY,
+    result JSONB NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
