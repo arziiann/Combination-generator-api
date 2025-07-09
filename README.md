@@ -344,7 +344,7 @@ After cloning the repository, follow these steps to set up the project locally:
 
 ```bash
 git clone https://github.com/arziiann/Combination-generator-api.git
-cd Combination-generator/server
+cd Combination-generator-api
 ````
 
 ---
