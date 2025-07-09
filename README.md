@@ -409,6 +409,10 @@ DB_PASSWORD=your_password
 
 This project relies on the following Node.js packages:
 
+```bash
+cd server/
+```
+
 | Package       | Purpose                           | Install Command                      |
 | ------------- | --------------------------------- | ------------------------------------ |
 | `express`     | Web server framework              | `npm install express`                |
